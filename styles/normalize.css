@@ -1,5 +1,6 @@
 /* Global Styles */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
@@ -7,61 +8,5 @@ body {
 }
 
 a {
-    color: #007bff;
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Heading Styles */
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-/* Paragraph Styles */
-p {
-    margin-bottom: 20px;
-}
-
-/* List Styles */
-ul, ol {
-    margin-bottom: 20px;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-/* Container Styles */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Responsive Images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    /* Add responsive styles here */
 }

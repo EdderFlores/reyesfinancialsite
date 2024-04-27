@@ -3,21 +3,51 @@
     width: 200px;
 }
 
-.stickyNav {
-    display: flex;
-    justify-content: center; /* Center the flex items horizontally */
-    text-align: center;
-    gap: 20px;
-    background-color: #23A3EA;
-    padding: 10px 20px; /* Adjust padding as needed */
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensure it's above other content */
+.mainHeader {
+    overflow: hidden;
 }
 
-.stickyNav a {
-    font-weight: 600;
-    font-size: 20px;
+.mainHeader a {
+    font-size: 18px;
     color: #fff;
-    margin: 0 10px; /* Adjust margin as needed */
 }
+
+.stickyNav {
+    float: left;
+    display: block;
+    text-align: center;
+    background-color: #23A3EA;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50; /* Ensure it's above other content */
+}
+
+.navBar {
+    padding: 15px 20px 5px; 
+    background-color: #00192A;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute items evenly */
+    margin-top: 55px; /* Adjust this value to match the height of .stickyNav */
+}
+
+.navBarItems a {
+    margin-left: 20px;
+}
+
+.navBarItems a.active {
+    border-bottom: 2px solid #fff;
+}
+
+.navBarItems :hover{
+    border-bottom: 2px solid #fff;
+}
+
+.cotizaButton {
+    padding: 10px 15px 10px;
+    border-radius: 10px;
+    background-color: #2373EA;
+}
+

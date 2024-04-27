@@ -1,3 +1,23 @@
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+    .stickyNav {
+        flex-direction: row; /* Align items in a row for larger screens */
+    }
+
+    .stickyNav a {
+        margin: 0 10px; /* Adjust margin for spacing between items */
+    }
+
+    .stickyNav a:not(:last-child)::after {
+        content: '|'; /* Separator line */
+        margin: 0 10px; /* Adjust spacing */
+    }
+    
+    .stickyNav a:not(:last-child) {
+        margin-bottom: 10px; /* Adjust margin for spacing between items */
+    }
+}
+
 
 .logo {
     width: 200px;
@@ -13,8 +33,8 @@
 }
 
 .stickyNav {
-    float: left;
-    display: block;
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
     text-align: center;
     background-color: #23A3EA;
     padding: 15px;
@@ -23,6 +43,18 @@
     top: 0;
     z-index: 50; /* Ensure it's above other content */
 }
+
+.stickyNav a {
+    margin: 0 10px; /* Adjust margin as needed */
+    color: #fff;
+    text-decoration: none;
+}
+
+.stickyNav a:not(:last-child)::after {
+    content: '|'; /* Separator line */
+    margin: 0 10px; /* Adjust spacing */
+}
+
 
 .navBar {
     padding: 15px 20px 5px; 
@@ -49,5 +81,11 @@
     padding: 10px 15px 10px;
     border-radius: 10px;
     background-color: #2373EA;
+    color: #fff; 
+    text-decoration: none;
 }
 
+.cotizaButton:hover {
+    background-color: #1c5cc5; 
+    border-bottom: none;
+}

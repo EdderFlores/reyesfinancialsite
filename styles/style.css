@@ -18,6 +18,13 @@
     }
 }
 
+h1 {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+}
 
 .logo {
     width: 200px;
@@ -62,7 +69,7 @@
     display: flex;
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Distribute items evenly */
-    margin-top: 55px; /* Adjust this value to match the height of .stickyNav */
+    margin-top: 4.5%; /* Adjust this value to match the height of .stickyNav */
 }
 
 .navBarItems a {
@@ -86,6 +93,61 @@
 }
 
 .cotizaButton:hover {
+    cursor: pointer;
     background-color: #1c5cc5; 
     border-bottom: none;
+}
+
+.firstSection {
+    display: flex;
+    background-image: url('/imgs/frstSectionImg.avif');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    padding: 3%;
+    color: #fff;
+    line-height: 50px;
+}
+
+.grid {
+    flex: 2; /* Takes up part of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: flex-start; /* Aligns items to the left, by default */
+}
+
+.grid h1 {
+    font-size: 45px;
+}
+
+.contentRight {
+    flex: 1; /* Takes up the other half of the container */
+    /* No content needed, serves as spacing for the background */
+}
+
+.headlineFirst {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.CTAfirstSect {
+    font-size: 20px;
+}
+
+.CTAquote {
+    padding: 20px 15px 20px;
+    border-radius: 10px;
+    background-color: #2373EA;
+    color: #fff; 
+    text-decoration: none;
+}
+
+.CTAtalkAgent {
+    padding: 20px 15px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #2373EA; 
+    text-decoration: none;
 }

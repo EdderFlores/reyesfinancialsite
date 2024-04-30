@@ -81,7 +81,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 70vh;
     padding: 3%;
     color: #fff;
     line-height: 50px;
@@ -125,7 +125,7 @@ a {
 
 section > div:nth-child(2) {
     position: absolute; /* This positions the div relative to the firstSection div */
-    top: 85%; /* Adjust this value to change the overlap. 80% should make it overlap just a bit at the bottom. */
+    top: 95%; /* Adjust this value to change the overlap. 80% should make it overlap just a bit at the bottom. */
     left: 20%; /* This centers the div horizontally */
     width: 60%; /* This makes the div take up 60% of the width */
     background-color: #fff; /* This gives the div a white background */
@@ -145,6 +145,6 @@ section > div:nth-child(2) {
 
 .header3{
     color: #333333;
-    font-size: 35px;
+    font-size: 30px;
     margin: 0;
 }

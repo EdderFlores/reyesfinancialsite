@@ -1,23 +1,3 @@
-/* Responsive styles */
-@media screen and (min-width: 768px) {
-    .stickyNav {
-        flex-direction: row; /* Align items in a row for larger screens */
-    }
-
-    .stickyNav a {
-        margin: 0 10px; /* Adjust margin for spacing between items */
-    }
-
-    .stickyNav a:not(:last-child)::after {
-        content: '|'; /* Separator line */
-        margin: 0 10px; /* Adjust spacing */
-    }
-    
-    .stickyNav a:not(:last-child) {
-        margin-bottom: 10px; /* Adjust margin for spacing between items */
-    }
-}
-
 h1 {
     margin: 0;
 }
@@ -45,23 +25,19 @@ a {
     text-align: center;
     background-color: #23A3EA;
     padding: 15px;
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 50; /* Ensure it's above other content */
 }
 
 .stickyNav a {
-    margin: 0 10px; /* Adjust margin as needed */
+    margin: 0 10px;
     color: #fff;
-    text-decoration: none;
+    border-right: 1px solid #fff; /* This adds a line separator on the right of each a element */
+    padding-right: 10px; /* This adds some space between the text and the line separator */
 }
 
-.stickyNav a:not(:last-child)::after {
-    content: '|'; /* Separator line */
-    margin: 0 10px; /* Adjust spacing */
+.stickyNav a:last-child {
+    border-right: none; /* This removes the line separator from the last a element */
 }
-
 
 .navBar {
     padding: 15px 20px 5px; 
@@ -69,7 +45,6 @@ a {
     display: flex;
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Distribute items evenly */
-    margin-top: 4.5%; /* Adjust this value to match the height of .stickyNav */
 }
 
 .navBarItems a {
@@ -99,9 +74,11 @@ a {
 }
 
 .firstSection {
+    position: relative; /* This allows the second div to be positioned relative to this one */
+    margin-bottom: 200px; /* Adjust this value to the height of the second div */
     display: flex;
     background-image: url('/imgs/frstSectionImg.avif');
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -111,11 +88,12 @@ a {
 }
 
 .grid {
-    flex: 2; /* Takes up part of the container */
+    flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: flex-start; /* Aligns items to the left, by default */
+    width: 33%;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .grid h1 {
@@ -123,8 +101,7 @@ a {
 }
 
 .contentRight {
-    flex: 1; /* Takes up the other half of the container */
-    /* No content needed, serves as spacing for the background */
+    flex: 1;
 }
 
 .headlineFirst {
@@ -137,17 +114,37 @@ a {
 }
 
 .CTAquote {
-    padding: 20px 15px 20px;
-    border-radius: 10px;
     background-color: #2373EA;
-    color: #fff; 
-    text-decoration: none;
+    color: #fff;
 }
 
 .CTAtalkAgent {
-    padding: 20px 15px 20px;
-    border-radius: 10px;
     background-color: #fff;
-    color: #2373EA; 
-    text-decoration: none;
+    color: #2373EA;
+}
+
+section > div:nth-child(2) {
+    position: absolute; /* This positions the div relative to the firstSection div */
+    top: 85%; /* Adjust this value to change the overlap. 80% should make it overlap just a bit at the bottom. */
+    left: 20%; /* This centers the div horizontally */
+    width: 60%; /* This makes the div take up 60% of the width */
+    background-color: #fff; /* This gives the div a white background */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* This gives the div a shadow */
+    padding: 20px; /* This gives some space around the content */
+    display: flex; /* This allows the content to be centered */
+    flex-direction: column; /* This stacks the content vertically */
+    align-items: center; /* This centers the content horizontally */
+    justify-content: center; /* This centers the content vertically */
+    border-radius: 20px; /* This gives the div rounded corners for a modern design */
+}
+
+.secondSection-st{
+    font-size: 20px;
+    text-align: center;
+}
+
+.header3{
+    color: #333333;
+    font-size: 35px;
+    margin: 0;
 }

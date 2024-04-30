@@ -10,3 +10,17 @@ body {
 a {
     text-decoration: none;
 }
+
+.button {
+    padding: 14px 20px 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2373EA;
+    color: #fff; 
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.8; /* Slightly fade the button on hover */
+}
